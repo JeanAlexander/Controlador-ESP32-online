@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ESP32 ADC Monitor</title>
+  <link rel="stylesheet" href="adc.css">
+</head>
+<body>
+
+  <header>
+    <h1>📊 Monitor ADC ESP32</h1>
+    <span id="esp-status" class="offline">ESP32 OFFLINE</span>
+  </header>
+
+  <main>
+    <div class="adc-card">
+      <h2>ADC PIN 34</h2>
+
+      <div class="value-box">
+        <div>
+          <span class="label">RAW</span>
+          <span id="adc-raw">---</span>
+        </div>
+        <div>
+          <span class="label">Voltaje</span>
+          <span id="adc-voltage">--- V</span>
+        </div>
+      </div>
+
+      <div class="progress-container">
+        <div id="adc-bar"></div>
+      </div>
+
+      <p class="timestamp">
+        Última lectura: <span id="adc-time">--:--:--</span>
+      </p>
+    </div>
+  </main>
+
+  <script src="adc.js"></script>
+</body>
+</html>

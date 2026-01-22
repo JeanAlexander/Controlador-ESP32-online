@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Puertas - Edificio</title>
+    <link rel="stylesheet" href="controlPuertas.css">
+</head>
+<body>
+
+<h1>🏢 Control de Puertas - Edificio 2 Pisos</h1>
+
+<div class="building">
+
+    <!-- PISO 2 -->
+    <div class="floor">
+        <h2>Piso 2</h2>
+
+        <div class="door" id="p2_oficina">
+            <span>🚪 Oficina</span>
+            <button onclick="toggleDoor('p2_oficina')">Cerrar</button>
+        </div>
+
+        <div class="door" id="p2_sala">
+            <span>🚪 Sala</span>
+            <button onclick="toggleDoor('p2_sala')">Cerrar</button>
+        </div>
+
+        <div class="door elevator" id="ascensor_2">
+            <span>🛗 Ascensor</span>
+            <button onclick="toggleDoor('ascensor_2')">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- PISO 1 -->
+    <div class="floor">
+        <h2>Piso 1</h2>
+
+        <div class="door" id="p1_oficina">
+            <span>🚪 Oficina</span>
+            <button onclick="toggleDoor('p1_oficina')">Cerrar</button>
+        </div>
+
+        <div class="door" id="p1_almacen">
+            <span>🚪 Almacén</span>
+            <button onclick="toggleDoor('p1_almacen')">Cerrar</button>
+        </div>
+
+        <div class="door elevator" id="ascensor_1">
+            <span>🛗 Ascensor</span>
+            <button onclick="toggleDoor('ascensor_1')">Cerrar</button>
+        </div>
+
+        <div class="door main-door" id="entrada">
+            <span>🚪 Entrada Principal</span>
+            <button onclick="toggleDoor('entrada')">Cerrar</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="ControlPuertas.js"></script>
+</body>
+</html>
